@@ -58,7 +58,7 @@
 body {
   position: relative;
   font-family: tajwal;
-  height: 5000px;
+  height: 10000px;
 }
 body::-webkit-scrollbar {
   background-color: rgba(241, 245, 244, 0.5);
@@ -78,11 +78,15 @@ html {
   overflow: hidden !important;
 }
 
-@media (min-width: 1500px) {
+.container {
+  width: 1170px;
+}
+@media (min-width: 1700px) {
   .container {
     width: 1640px;
   }
 }
+
 .a {
   opacity: 1 !important;
 }
