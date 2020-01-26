@@ -1,0 +1,33 @@
+.mo-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+}
+
+.nav-li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+
+    &.nav-li-active {
+        background-color: #fff;
+        pointer-events: none;
+
+        .nav-anchor {
+            color: $green;
+        }
+    }
+}
+
+.nav-anchor {
+    font-family: bold;
+    font-size: 17px;
+    color: $text;
+    @include transition(all 0.3s ease-in-out);
+
+    &:hover {
+        color: $green;
+    }
+}

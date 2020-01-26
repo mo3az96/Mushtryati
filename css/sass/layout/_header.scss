@@ -1,0 +1,129 @@
+header {
+    border-top: 5px solid $green;
+    padding-top: 35px;
+    margin-bottom: 34px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 151px;
+    display: flex;
+}
+
+.mo-cart-ico {
+    display: flex;
+    position: relative;
+    width: 35.13px;
+
+    .a {
+        stroke: none;
+        @include transition(all 0.3s ease-in-out);
+    }
+
+    .items {
+        right: -12px;
+        top: -6px;
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        line-height: 22px;
+        background-color: $green;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 15px;
+        font-family: bold;
+    }
+
+    &:hover {
+        .a {
+            fill: $green;
+        }
+
+        .items {
+            animation: vibe 0.7s ease forwards;
+        }
+    }
+}
+
+._2nd-header-cont {
+    background-color: $back;
+    align-items: center;
+    justify-content: space-between;
+}
+
+._2nd-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mo-menu-ico {
+    display: flex;
+    position: relative;
+
+    .a {
+        fill: $text;
+        @include transition(all 0.3s ease-in-out);
+    }
+
+    &:hover {
+        .a {
+            fill: $green;
+            stroke: $green;
+        }
+    }
+}
+
+.mo-user-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-anchor {
+    margin-left: 30px;
+
+    .a {
+        fill: $text;
+        stroke-width: 0;
+        @include transition(all 0.3s ease-in-out);
+    }
+
+    &:last-of-type {
+        margin-left: 0;
+    }
+
+    &.mo-likes {
+        .a {
+            stroke-width: 2px;
+            fill: transparent;
+        }
+    }
+
+    &.mo-user {
+        .a {
+            stroke-width: 0.5px;
+        }
+    }
+
+    &:hover {
+        .a {
+            fill: $green;
+            stroke: $green;
+        }
+
+        &.mo-likes {
+            .a {
+                fill: transparent;
+            }
+        }
+    }
+}

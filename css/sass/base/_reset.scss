@@ -1,0 +1,34 @@
+body {
+    position: relative;
+    font-family: tajwal;
+    height: 5000px;
+
+    &::-webkit-scrollbar {
+        background-color: rgba($back, 0.5);
+        width: 7px;
+        height: 0px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $green;
+    }
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: $green rgba($back, 0.5);
+}
+
+.overflow {
+    overflow: hidden !important;
+}
+
+@media (min-width: 1500px) {
+    .container {
+        width: 1640px;
+    }
+}
+
+.a {
+    opacity: 1 !important;
+}
