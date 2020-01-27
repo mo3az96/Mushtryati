@@ -42,7 +42,7 @@ $(document).ready(function () {
             prevEl: '.main-slider .swiper-button-prev',
         },
         autoplay: {
-            delay: 5000,
+            delay: 10000,
         },
         spaceBetween: 10,
         loop: true,
@@ -55,7 +55,7 @@ $(document).ready(function () {
         loop: true,
         loopFillGroupWithBlank: false,
         autoplay: {
-            delay: 5000,
+            delay: 10000,
         },
         pagination: {
             el: '#specials .swiper-pagination',
@@ -84,7 +84,7 @@ $(document).ready(function () {
         loop: true,
         loopFillGroupWithBlank: false,
         autoplay: {
-            delay: 5000,
+            delay: 10000,
         },
         navigation: {
             nextEl: '#choosed .swiper-button-next',
@@ -95,7 +95,7 @@ $(document).ready(function () {
                 slidesPerView: 1,
                 slidesPerGroup: 1,
                 pagination: {
-                    el: '#specials .swiper-pagination',
+                    el: '#choosed .swiper-pagination',
                     clickable: true,
                 },
             },
@@ -103,13 +103,35 @@ $(document).ready(function () {
                 slidesPerView: 2,
                 slidesPerGroup: 2,
                 pagination: {
-                    el: '#specials .swiper-pagination',
+                    el: '#choosed .swiper-pagination',
                     clickable: true,
                 },
             },
             1200: {
                 slidesPerView: 3,
                 slidesPerGroup: 3,
+            },
+        },
+    });
+    var bannerswiper = new Swiper('.banners-slider .swiper-container', {
+        slidesPerView: 3,
+        freeMode: true,
+        spaceBetween: 16,
+        loop: true,
+        // autoplay: {
+        //     delay: 10000,
+        // },
+        breakpoints: {
+            500: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+            },
+            992: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+            },
+            1440: {
+                slidesPerView: 2,
             },
         },
     });

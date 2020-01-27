@@ -417,6 +417,112 @@ html {
   margin-left: 0;
 }
 
+.banners-slider-cont {
+  margin-top: 100px;
+}
+.banners-slider-cont .banners {
+  padding-right: 290px;
+}
+.banners-slider-cont .banners-head {
+  padding: 0 20px;
+  height: 143px;
+  background-color: #fff;
+  font-size: 34px;
+  font-family: bold;
+  color: #4A4A4A;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 60px;
+}
+.banners-slider-cont .banners-head:after {
+  top: -14px;
+  left: -14px;
+  right: -14px;
+  bottom: -14px;
+  content: "";
+  border: 2px solid #fff;
+  position: absolute;
+}
+.banners-slider-cont .banner {
+  width: auto;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  display: flex;
+}
+.banners-slider-cont .banner:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), to(rgba(255, 255, 255, 0.7)));
+  background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.7));
+  z-index: 1;
+  cursor: pointer;
+}
+.banners-slider-cont .banner img {
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+.banners-slider-cont .banner:hover img {
+  transform: scale(1.05);
+}
+.banners-slider-cont .banner:hover:after {
+  -webkit-animation: shape 0.7s linear;
+  animation: shape 0.7s linear;
+}
+.banners-slider-cont .banners-slider {
+  position: relative;
+}
+.banners-slider-cont .banner-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 32px;
+}
+.banners-slider-cont .banner-name {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 38px;
+  font-family: bold;
+  margin: 0 4.5px;
+}
+.banners-slider-cont .shop-now {
+  margin: 0 4.5px;
+  font-size: 23px;
+  font-family: bold;
+  color: #fff;
+  padding: 0 20px;
+  height: 40px;
+  border: 2px solid #FFFFFF;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.banners-slider-cont .shop-now:hover {
+  border-color: #5ABA47;
+}
+
 header {
   border-top: 5px solid #5ABA47;
   padding-top: 35px;
