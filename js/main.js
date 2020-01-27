@@ -150,4 +150,15 @@ $(document).ready(function () {
             },
         },
     });
+    $('.mo-search').click(function () {
+        $(".search-fixed").fadeIn(700);
+        $('.search-input').focus();
+    });
+    $('.search-fixed').click(function () {
+        $(".search-fixed").fadeOut(700);
+        $('.search-input').focusout();
+    });
+    $('.search-cont').click(function (e) {
+        e.stopPropagation();
+    });
 });

@@ -9,16 +9,6 @@
     height: 100%;
     display: flex;
     align-items: center;
-    padding: 0 20px;
-
-    &.nav-li-active {
-        background-color: #fff;
-        pointer-events: none;
-
-        .nav-anchor {
-            color: $green;
-        }
-    }
 }
 
 .nav-anchor {
@@ -26,8 +16,89 @@
     font-size: 17px;
     color: $text;
     @include transition(all 0.3s ease-in-out);
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+        background-color: #fff;
+        color: $green;
+    }
+}
+
+
+.mo-dropdown {
+    position: relative;
+    z-index: 9;
+    @include transition(all 0.3s ease-in-out);
+
+    .mo-dropmenu {
+        padding: 19px 0;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 100%);
+        z-index: 9;
+        min-width: 471px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        visibility: hidden;
+        opacity: 0;
+        @include transition(all 0.3s ease-in-out);
+
+        .nav-li {
+            width: 33.333%;
+            padding: 0;
+            justify-content: center;
+            position: relative;
+            margin: 5px 0;
+
+            &:after {
+                background-color: $back;
+                border-radius: 50%;
+                width: 8px;
+                height: 8px;
+                content: "";
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+
+            &:nth-of-type(3n) {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+
+        .nav-anchor {
+            color: $footer;
+            opacity: 0.5;
+
+            &:hover {
+                color: $text;
+                opacity: 1;
+            }
+        }
+    }
 
     &:hover {
-        color: $green;
+        background-color: #fff;
+
+        &>.nav-anchor {
+            color: $green;
+        }
+
+        .mo-dropmenu {
+            visibility: visible;
+            opacity: 1;
+        }
     }
 }

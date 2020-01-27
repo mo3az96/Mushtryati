@@ -122,6 +122,98 @@ html {
   font-family: "black";
   src: url("../fonts/TAJAWAL/TAJAWAL-BLACK.TTF");
 }
+.search-fixed {
+  background-color: rgba(255, 255, 255, 0.9);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  position: fixed;
+  display: none;
+}
+.search-fixed .search-cont {
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  flex-direction: column;
+}
+.search-fixed .search-sign {
+  margin-bottom: 35px;
+}
+.search-fixed .search-sign .a {
+  fill: #4A4A4A;
+}
+.search-fixed .search-head {
+  font-size: 34px;
+  font-family: bold;
+  color: #4A4A4A;
+  margin-bottom: 20px;
+}
+.search-fixed .search-desc {
+  font-size: 20px;
+  font-family: bold;
+  color: #4A4A4A;
+}
+.search-fixed .search {
+  position: relative;
+  width: 100%;
+  height: 54px;
+  margin-top: 30px;
+}
+.search-fixed .search-input {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  padding: 0 25px;
+  background-color: #F1F5F4;
+  border-radius: 27px;
+  border: 2px solid transparent;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #4A4A4A;
+  font-size: 16px;
+}
+.search-fixed .search-input::placeholder {
+  color: #414141;
+  font-size: 15px;
+  opacity: 0.5;
+}
+.search-fixed .search-input:focus {
+  border-color: #5ABA47;
+}
+.search-fixed .search-button {
+  padding: 0 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #5ABA47;
+  border: 2px solid #5ABA47;
+  font-size: 17px;
+  color: #fff;
+  font-family: bold;
+  border-radius: 27px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.search-fixed .search-button:hover {
+  color: #5ABA47;
+  background-color: transparent;
+}
+
 .newsletter-cont {
   position: relative;
   width: 100%;
@@ -186,14 +278,6 @@ html {
   height: 100%;
   display: flex;
   align-items: center;
-  padding: 0 20px;
-}
-.nav-li.nav-li-active {
-  background-color: #fff;
-  pointer-events: none;
-}
-.nav-li.nav-li-active .nav-anchor {
-  color: #5ABA47;
 }
 
 .nav-anchor {
@@ -204,9 +288,83 @@ html {
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
 }
-.nav-anchor:hover {
+.nav-anchor:hover, .nav-anchor:focus {
+  background-color: #fff;
   color: #5ABA47;
+}
+
+.mo-dropdown {
+  position: relative;
+  z-index: 9;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.mo-dropdown .mo-dropmenu {
+  padding: 19px 0;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  z-index: 9;
+  min-width: 471px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  visibility: hidden;
+  opacity: 0;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.mo-dropdown .mo-dropmenu .nav-li {
+  width: 33.333%;
+  padding: 0;
+  justify-content: center;
+  position: relative;
+  margin: 5px 0;
+}
+.mo-dropdown .mo-dropmenu .nav-li:after {
+  background-color: #F1F5F4;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.mo-dropdown .mo-dropmenu .nav-li:nth-of-type(3n)::after {
+  display: none;
+}
+.mo-dropdown .mo-dropmenu .nav-anchor {
+  color: #414141;
+  opacity: 0.5;
+}
+.mo-dropdown .mo-dropmenu .nav-anchor:hover {
+  color: #4A4A4A;
+  opacity: 1;
+}
+.mo-dropdown:hover {
+  background-color: #fff;
+}
+.mo-dropdown:hover > .nav-anchor {
+  color: #5ABA47;
+}
+.mo-dropdown:hover .mo-dropmenu {
+  visibility: visible;
+  opacity: 1;
 }
 
 .main-slider {
