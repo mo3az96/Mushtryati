@@ -288,8 +288,14 @@
 .banners-slider-cont {
     margin-top: 100px;
 
-    .banners {
-        padding-right: 290px;
+
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .swiper-slide {
+        width: 674px !important;
     }
 
     .banners-head {
@@ -322,7 +328,7 @@
     }
 
     .banner {
-        width: auto;
+        width: 100%;
         overflow: hidden;
         position: relative;
         margin: 0;
@@ -358,8 +364,13 @@
         }
     }
 
+    .banners {
+        padding-right: 290px;
+    }
+
     .banners-slider {
         position: relative;
+        width: 100%;
     }
 
     .banner-info {

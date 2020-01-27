@@ -115,24 +115,26 @@ $(document).ready(function () {
     });
     var bannerswiper = new Swiper('.banners-slider .swiper-container', {
         slidesPerView: 2,
-        freeMode: true,
         spaceBetween: 16,
         loop: true,
+        freeMode: true,
         // autoplay: {
         //     delay: 10000,
         // },
-        breakpoints: {
-            500: {
-                slidesPerView: 1,
-                slidesPerGroup: 1,
-            },
-            992: {
-                slidesPerView: 2,
-                slidesPerGroup: 2,
-            },
-            1440: {
-                slidesPerView: 2,
-            },
-        },
+        // breakpoints: {
+        //     500: {
+        //         slidesPerView: 1,
+        //         slidesPerGroup: 1,
+        //     },
+        //     992: {
+        //         slidesPerView: 2,
+        //         slidesPerGroup: 2,
+        //     },
+        //     1440: {
+        //         slidesPerView: 2,
+        //     },
+        // },
     });
+    bannerswiper.slideTo(0, 0, false);
+    // bannerswiper.slideTo(0, false, false);
 });

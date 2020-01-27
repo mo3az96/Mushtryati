@@ -420,8 +420,12 @@ html {
 .banners-slider-cont {
   margin-top: 100px;
 }
-.banners-slider-cont .banners {
-  padding-right: 290px;
+.banners-slider-cont .container {
+  width: 100%;
+  padding: 0;
+}
+.banners-slider-cont .swiper-slide {
+  width: 674px !important;
 }
 .banners-slider-cont .banners-head {
   padding: 0 20px;
@@ -451,7 +455,7 @@ html {
   position: absolute;
 }
 .banners-slider-cont .banner {
-  width: auto;
+  width: 100%;
   overflow: hidden;
   position: relative;
   margin: 0;
@@ -482,8 +486,12 @@ html {
   -webkit-animation: shape 0.7s linear;
   animation: shape 0.7s linear;
 }
+.banners-slider-cont .banners {
+  padding-right: 290px;
+}
 .banners-slider-cont .banners-slider {
   position: relative;
+  width: 100%;
 }
 .banners-slider-cont .banner-info {
   position: absolute;
