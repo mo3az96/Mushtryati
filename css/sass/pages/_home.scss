@@ -41,7 +41,7 @@
 }
 
 .banner {
-    width: calc(50% - 16px);
+    width: calc(50% - 8px);
     overflow: hidden;
     margin-bottom: 16px;
     margin-left: 16px;
@@ -76,6 +76,41 @@
         &:after {
             -webkit-animation: shape 0.7s linear;
             animation: shape 0.7s linear;
+        }
+    }
+}
+
+._2-banners-cont {
+    margin-top: 100px;
+
+    .banners-head {
+        padding: 0 40px;
+        height: 140px;
+        background-color: #fff;
+        font-size: 34px;
+        font-family: bold;
+        color: $text;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9;
+        border-radius: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 50px 60px;
+
+        &:after {
+            top: -14px;
+            left: -14px;
+            right: -14px;
+            bottom: -14px;
+            content: "";
+            border: 2px solid #fff;
+            border-radius: 0;
+            position: absolute;
         }
     }
 }
