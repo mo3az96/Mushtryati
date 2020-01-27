@@ -52,7 +52,7 @@
         justify-content: center;
         flex-direction: column;
         top: 230px;
-        left: -40px;
+        left: -60px;
 
         .swiper-pagination-bullet {
             margin: 2.5px 0;
@@ -78,11 +78,11 @@
         background-image: none;
 
         &.swiper-button-prev {
-            left: -40px;
+            left: -60px;
         }
 
         &.swiper-button-next {
-            right: -40px;
+            right: -60px;
         }
 
         path {
