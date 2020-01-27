@@ -233,52 +233,39 @@
         width: 100%;
         display: flex;
 
-        &:first-of-type {
-            display: block;
-            position: relative;
-            overflow: hidden;
-
-            &:after {
-                padding-bottom: calc(303/812 * 100%);
-                content: "";
-                display: block;
-            }
-
-            .banner {
-                width: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-
-                img {
-                    width: 100%;
-                    height: auto;
-                    object-fit: cover;
-                }
-            }
-        }
-
         .banner {
-            width: calc(50% - 8px);
+            margin-left: 0;
+            margin-bottom: 13px;
+        }
 
-            .banner-info {
-                flex-direction: column;
-                align-items: flex-end;
-                padding-left: 10px;
+        &:last-of-type {
+            .banner {
+                width: calc(50% - 8px);
+                margin-left: 16px;
 
-                .banner-name {
-                    order: 1;
-                    margin: 0;
-                    font-size: 33px;
+                &:last-of-type {
+                    margin-left: 0;
                 }
 
-                .shop-now {
-                    order: 2;
-                    margin-top: 9px;
+                .banner-info {
+                    flex-direction: column;
+                    align-items: flex-end;
+                    padding-left: 10px;
+
+                    .banner-name {
+                        order: 1;
+                        margin: 0;
+                        font-size: 33px;
+                    }
+
+                    .shop-now {
+                        order: 2;
+                        margin-top: 9px;
+                    }
                 }
             }
         }
+
+
     }
 }
