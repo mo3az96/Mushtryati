@@ -114,7 +114,7 @@ $(document).ready(function () {
         },
     });
     var bannerswiper = new Swiper('.banners-slider .swiper-container', {
-        slidesPerView: 3,
+        slidesPerView: 2,
         freeMode: true,
         spaceBetween: 16,
         loop: true,
