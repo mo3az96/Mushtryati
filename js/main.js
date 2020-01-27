@@ -118,23 +118,36 @@ $(document).ready(function () {
         spaceBetween: 16,
         loop: true,
         freeMode: true,
-        // autoplay: {
-        //     delay: 10000,
-        // },
-        // breakpoints: {
-        //     500: {
-        //         slidesPerView: 1,
-        //         slidesPerGroup: 1,
-        //     },
-        //     992: {
-        //         slidesPerView: 2,
-        //         slidesPerGroup: 2,
-        //     },
-        //     1440: {
-        //         slidesPerView: 2,
-        //     },
-        // },
     });
     bannerswiper.slideTo(0, 0, false);
-    // bannerswiper.slideTo(0, false, false);
+
+    var brandsswiper = new Swiper('#brands .Product-slider', {
+        slidesPerView: 6,
+        spaceBetween: 0,
+        slidesPerGroup: 6,
+        loop: true,
+        loopFillGroupWithBlank: false,
+        autoplay: {
+            delay: 10000,
+        },
+        pagination: {
+            el: '#brands .swiper-pagination',
+            clickable: true,
+        },
+        navigation: false,
+        breakpoints: {
+            500: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+            },
+            992: {
+                slidesPerView: 2,
+                slidesPerGroup: 2
+            },
+            1200: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+            },
+        },
+    });
 });

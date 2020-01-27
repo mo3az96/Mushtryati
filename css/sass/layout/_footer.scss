@@ -1,0 +1,73 @@
+.footer {
+    position: relative;
+    margin-top: 80px;
+    overflow: hidden;
+
+    .overlay {
+        position: absolute;
+        bottom: -120px;
+        left: -110px;
+    }
+
+    .foot-logo {
+        width: 250px;
+        display: flex;
+        margin-bottom: 37px;
+    }
+
+    .foot-header {
+        text-align: right;
+        font-size: 34px;
+        font-family: bold;
+        color: $text;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-bottom: 35px;
+
+        &:after {
+            content: "";
+            display: block;
+            width: 74px;
+            height: 3px;
+            background: $green;
+            border-radius: 3px;
+            margin-top: 13px;
+        }
+    }
+
+    .nav-foot-li {
+        margin: 5px 0;
+    }
+
+    .nav-foot-link {
+        font-size: 21px;
+        font-family: med;
+        color: $footer;
+        @include transition(all 0.3s ease-in-out);
+        display: inline-flex;
+
+        &:hover {
+            color: $green;
+            transform: translateX(-8px);
+        }
+    }
+
+    .news-sub-header {
+        font-size: 21px;
+        font-family: med;
+        color: $footer;
+    }
+
+    .last-footer {
+        height: 81px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 13px;
+        color: $text;
+        opacity: 0.5;
+    }
+}
