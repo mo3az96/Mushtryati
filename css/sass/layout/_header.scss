@@ -154,6 +154,19 @@ header {
 /* start Cart */
 .cart-cont {
     position: relative;
+
+    &:hover {
+        .mo-cartList {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .mo-cart-ico {
+            .a {
+                fill: $green;
+            }
+        }
+    }
 }
 
 .mo-cartList {
@@ -165,7 +178,9 @@ header {
     right: -50px;
     box-shadow: 0px 3px 6px #00000029;
     padding: 22px;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    @include transition(all 0.3s ease-in-out);
 
     @include xs {
         top: 40px;

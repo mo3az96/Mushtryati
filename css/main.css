@@ -1176,6 +1176,13 @@ header {
 .cart-cont {
   position: relative;
 }
+.cart-cont:hover .mo-cartList {
+  visibility: visible;
+  opacity: 1;
+}
+.cart-cont:hover .mo-cart-ico .a {
+  fill: #5ABA47;
+}
 
 .mo-cartList {
   background-color: #fff;
@@ -1186,7 +1193,12 @@ header {
   right: -50px;
   box-shadow: 0px 3px 6px #00000029;
   padding: 22px;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 @media (max-width: 767px) {
   .mo-cartList {

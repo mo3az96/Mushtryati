@@ -173,9 +173,6 @@ $(document).ready(function () {
     $('.search-cont').click(function (e) {
         e.stopPropagation();
     });
-    $('.mo-cart-ico').click(function () {
-        $(".mo-cartList").fadeToggle(400);
-    });
 
     if ($(window).width() <= 767) {
         $(".pro-withoutslider .product").wrap("<div class='swiper-slide'></div>");
