@@ -1054,6 +1054,7 @@ header {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  align-items: center;
 }
 
 .mo-cart-ico {
@@ -1195,6 +1196,9 @@ header {
 .cartList .table {
   border: none;
 }
+.cartList .table td {
+  border: none;
+}
 
 /*end Cart */
 ._4-banners-cont {
@@ -1275,6 +1279,7 @@ header {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  align-items: center;
 }
 .banner:after {
   content: "";

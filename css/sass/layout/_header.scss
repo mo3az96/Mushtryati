@@ -21,6 +21,7 @@ header {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    align-items: center
 }
 
 .mo-cart-ico {
@@ -176,6 +177,10 @@ header {
 
     .table {
         border: none;
+
+        td {
+            border: none;
+        }
     }
 }
 
