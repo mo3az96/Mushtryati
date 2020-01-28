@@ -18,6 +18,9 @@ header {
 .logo {
     max-width: 151px;
     display: flex;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .mo-cart-ico {

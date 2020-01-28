@@ -29,6 +29,9 @@
         width: 238px;
         display: flex;
         margin-bottom: 37px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
 
         @include xs {
             width: 150px;
@@ -107,6 +110,7 @@
         @include xs {
             margin-bottom: 15px;
             font-size: 18px;
+            text-align: center;
         }
     }
 

@@ -1056,6 +1056,9 @@ header {
 .logo {
   max-width: 151px;
   display: flex;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .mo-cart-ico {
@@ -1246,6 +1249,9 @@ header {
   margin-left: 16px;
   position: relative;
   display: flex;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .banner:after {
   content: "";
@@ -1574,6 +1580,9 @@ header {
   width: 238px;
   display: flex;
   margin-bottom: 37px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 @media (max-width: 767px) {
   .footer .foot-logo {
@@ -1650,6 +1659,7 @@ header {
   .footer .news-sub-header {
     margin-bottom: 15px;
     font-size: 18px;
+    text-align: center;
   }
 }
 .footer .last-footer {
