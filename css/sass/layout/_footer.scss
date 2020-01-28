@@ -26,7 +26,7 @@
     }
 
     .foot-logo {
-        width: 250px;
+        width: 238px;
         display: flex;
         margin-bottom: 37px;
 
@@ -37,7 +37,8 @@
     }
 
     .foot-header {
-        font-size: 34px;
+        // font-size: 34px;
+        font-size: 30px;
         font-family: bold;
         color: $text;
         display: flex;
@@ -75,7 +76,8 @@
     }
 
     .nav-foot-link {
-        font-size: 21px;
+        // font-size: 21px;
+        font-size: 18px;
         font-family: med;
         color: $footer;
         @include transition(all 0.3s ease-in-out);
@@ -97,7 +99,8 @@
     }
 
     .news-sub-header {
-        font-size: 21px;
+        // font-size: 21px;
+        font-size: 18px;
         font-family: med;
         color: $footer;
 

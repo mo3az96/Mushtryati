@@ -6,10 +6,13 @@
     }
 
     .banners-head {
-        width: 255px;
-        height: 255px;
+        // width: 255px;
+        // height: 255px;
+        width: 200px;
+        height: 200px;
         background-color: #fff;
-        font-size: 34px;
+        // font-size: 34px;
+        font-size: 30px;
         font-family: bold;
         color: $text;
         position: absolute;
@@ -126,7 +129,8 @@
     .banner-name {
         text-transform: uppercase;
         color: #fff;
-        font-size: 38px;
+        // font-size: 38px;
+        font-size: 34px;
         font-family: bold;
         margin: 0 4.5px;
 
@@ -137,11 +141,14 @@
 
     .shop-now {
         margin: 0 4.5px;
-        font-size: 23px;
         font-family: bold;
         color: #fff;
-        padding: 0 20px;
-        height: 40px;
+        font-size: 19px;
+        padding: 0 15px;
+        height: 35px;
+        // font-size: 23px;
+        // padding: 0 20px;
+        // height: 40px;
         border: 2px solid #FFFFFF;
         display: flex;
         align-items: center;
@@ -173,10 +180,13 @@
     margin-top: 100px;
 
     .banners-head {
-        padding: 0 40px;
-        height: 140px;
+        // padding: 0 40px;
+        // height: 140px;
+        padding: 0 35px;
+        height: 120px;
         background-color: #fff;
-        font-size: 34px;
+        // font-size: 34px;
+        font-size: 30px;
         font-family: bold;
         color: $text;
         position: absolute;
@@ -250,10 +260,13 @@
     margin-top: 100px;
 
     .banners-head {
-        padding: 0 40px;
-        height: 140px;
+        // padding: 0 50px;
+        // height: 140px;
+        padding: 0 35px;
+        height: 120px;
         background-color: #fff;
-        font-size: 34px;
+        // font-size: 34px;
+        font-size: 30px;
         font-family: bold;
         color: $text;
         position: absolute;
@@ -266,7 +279,6 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        padding: 50px 60px;
 
         &:after {
             top: -14px;

@@ -149,6 +149,8 @@ html {
 }
 .search-fixed .search-sign {
   margin-bottom: 35px;
+  width: 60px;
+  height: 60px;
 }
 .search-fixed .search-sign .a {
   fill: #4A4A4A;
@@ -160,7 +162,7 @@ html {
   }
 }
 .search-fixed .search-head {
-  font-size: 34px;
+  font-size: 30px;
   font-family: bold;
   color: #4A4A4A;
   margin-bottom: 20px;
@@ -171,7 +173,7 @@ html {
   }
 }
 .search-fixed .search-desc {
-  font-size: 20px;
+  font-size: 18px;
   font-family: bold;
   color: #4A4A4A;
 }
@@ -212,14 +214,14 @@ html {
   border-color: #5ABA47;
 }
 .search-fixed .search-button {
-  padding: 0 50px;
+  padding: 0 30px;
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
   background-color: #5ABA47;
   border: 2px solid #5ABA47;
-  font-size: 17px;
+  font-size: 16px;
   color: #fff;
   font-family: bold;
   border-radius: 27px;
@@ -265,14 +267,14 @@ html {
   border-color: #5ABA47;
 }
 .newsletter-cont .newsletter-button {
-  padding: 0 40px;
+  padding: 0 20px;
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
   background-color: #5ABA47;
   border: 2px solid #5ABA47;
-  font-size: 17px;
+  font-size: 16px;
   color: #fff;
   font-family: bold;
   border-radius: 27px;
@@ -646,7 +648,7 @@ html {
 }
 
 .products-head {
-  font-size: 34px;
+  font-size: 30px;
   color: #4A4A4A;
   font-family: bold;
 }
@@ -667,7 +669,8 @@ html {
 .product:hover .sale-sign,
 .product:hover .old-price,
 .product:hover .product-info {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
 }
 .product:hover .tools {
   visibility: visible;
@@ -682,13 +685,19 @@ html {
   top: -18px;
   left: 0;
   background-image: url("../../../images/Rectangle 401.png");
+  visibility: visible;
+  opacity: 1;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .sale-sign .sale-value {
   position: absolute;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 27px;
+  font-size: 25px;
   color: #fff;
   font-family: black;
 }
@@ -704,9 +713,15 @@ html {
   position: absolute;
   top: 30px;
   right: 7%;
+  visibility: visible;
+  opacity: 1;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .old-price .price {
-  font-size: 36px;
+  font-size: 32px;
   font-family: black;
   line-height: 1;
 }
@@ -720,6 +735,12 @@ html {
   align-items: center;
   padding: 0 5%;
   justify-content: space-between;
+  visibility: visible;
+  opacity: 1;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .product-info .name-rate {
   display: flex;
@@ -738,7 +759,7 @@ html {
   font-family: bold;
 }
 .product-info .new-price .price {
-  font-size: 36px;
+  font-size: 32px;
   font-family: black;
   line-height: 1;
 }
@@ -758,10 +779,10 @@ html {
   visibility: hidden;
   opacity: 0;
   overflow: hidden;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .tools .product-tools {
   margin: 0 5px;
@@ -796,13 +817,13 @@ html {
   transition-delay: 0s;
 }
 .tools .product-tools:nth-of-type(2) {
-  transition-delay: 0.1s;
+  transition-delay: 0.05s;
 }
 .tools .product-tools:nth-of-type(3) {
-  transition-delay: 0.2s;
+  transition-delay: 0.1s;
 }
 .tools .product-tools:nth-of-type(4) {
-  transition-delay: 0.3s;
+  transition-delay: 0.15s;
 }
 
 .Product-flex {
@@ -823,12 +844,12 @@ html {
   .Product-flex .product {
     width: calc(33.3333% - 10.76px);
   }
-}
-.Product-flex .product:nth-of-type(4n) {
-  margin-left: 16px;
-}
-.Product-flex .product:nth-of-type(3n) {
-  margin-left: 0;
+  .Product-flex .product:nth-of-type(4n) {
+    margin-left: 16px;
+  }
+  .Product-flex .product:nth-of-type(3n) {
+    margin-left: 0;
+  }
 }
 
 .banners-slider-cont {
@@ -1159,10 +1180,10 @@ header {
   }
 }
 ._4-banners-cont .banners-head {
-  width: 255px;
-  height: 255px;
+  width: 200px;
+  height: 200px;
   background-color: #fff;
-  font-size: 34px;
+  font-size: 30px;
   font-family: bold;
   color: #4A4A4A;
   position: absolute;
@@ -1274,7 +1295,7 @@ header {
 .banner .banner-name {
   text-transform: uppercase;
   color: #fff;
-  font-size: 38px;
+  font-size: 34px;
   font-family: bold;
   margin: 0 4.5px;
 }
@@ -1285,11 +1306,11 @@ header {
 }
 .banner .shop-now {
   margin: 0 4.5px;
-  font-size: 23px;
   font-family: bold;
   color: #fff;
-  padding: 0 20px;
-  height: 40px;
+  font-size: 19px;
+  padding: 0 15px;
+  height: 35px;
   border: 2px solid #FFFFFF;
   display: flex;
   align-items: center;
@@ -1323,10 +1344,10 @@ header {
   margin-top: 100px;
 }
 ._2-banners-cont .banners-head {
-  padding: 0 40px;
-  height: 140px;
+  padding: 0 35px;
+  height: 120px;
   background-color: #fff;
-  font-size: 34px;
+  font-size: 30px;
   font-family: bold;
   color: #4A4A4A;
   position: absolute;
@@ -1391,10 +1412,10 @@ header {
   margin-top: 100px;
 }
 ._4-banners-cont-sec .banners-head {
-  padding: 0 40px;
-  height: 140px;
+  padding: 0 35px;
+  height: 120px;
   background-color: #fff;
-  font-size: 34px;
+  font-size: 30px;
   font-family: bold;
   color: #4A4A4A;
   position: absolute;
@@ -1407,7 +1428,6 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 50px 60px;
 }
 ._4-banners-cont-sec .banners-head:after {
   top: -14px;
@@ -1551,7 +1571,7 @@ header {
   }
 }
 .footer .foot-logo {
-  width: 250px;
+  width: 238px;
   display: flex;
   margin-bottom: 37px;
 }
@@ -1562,7 +1582,7 @@ header {
   }
 }
 .footer .foot-header {
-  font-size: 34px;
+  font-size: 30px;
   font-family: bold;
   color: #4A4A4A;
   display: flex;
@@ -1599,7 +1619,7 @@ header {
   }
 }
 .footer .nav-foot-link {
-  font-size: 21px;
+  font-size: 18px;
   font-family: med;
   color: #414141;
   -moz-transition: all 0.3s ease-in-out;
@@ -1622,7 +1642,7 @@ header {
   }
 }
 .footer .news-sub-header {
-  font-size: 21px;
+  font-size: 18px;
   font-family: med;
   color: #414141;
 }
