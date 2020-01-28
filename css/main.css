@@ -506,6 +506,10 @@ html {
 .main-slider .slide {
   position: relative;
 }
+.main-slider .main-slide {
+  position: relative;
+  display: flex;
+}
 .main-slider .slide-info {
   position: absolute;
   top: 0;
@@ -513,10 +517,76 @@ html {
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
 }
-.main-slider .slide-info .sale {
+.main-slider .slide-info .slide-header {
   font-size: 118px;
   color: #fff;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .main-slider .slide-info .slide-header {
+    font-size: 40px;
+  }
+}
+.main-slider .slide-info .shop-now-btn {
+  padding: 0 30px;
+  max-width: 175px;
+  height: 56px;
+  border-radius: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 2px solid #5ABA47;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #5ABA47;
+  font-size: 17px;
+  font-family: bold;
+}
+@media (max-width: 767px) {
+  .main-slider .slide-info .shop-now-btn {
+    font-size: 15px;
+    padding: 0 20px;
+    height: 30px;
+  }
+}
+.main-slider .slide-info .shop-now-btn:hover, .main-slider .slide-info .shop-now-btn:focus {
+  color: #fff;
+  background-color: #5ABA47;
+  box-shadow: 0px 3px 20px #5ABA4740;
+}
+.main-slider .slide-info .sale {
+  direction: ltr;
+  font-size: 65px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .main-slider .slide-info .sale {
+    font-size: 20px;
+  }
+}
+.main-slider .slide-info .sale > span {
+  color: #5ABA47;
+}
+.main-slider .slide-info .sale .name {
+  color: #fff;
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+@media (max-width: 767px) {
+  .main-slider .slide-info .sale .name {
+    font-size: 15px;
+  }
 }
 .main-slider div[class^=swiper-button-] {
   top: 50%;
