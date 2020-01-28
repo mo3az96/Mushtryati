@@ -1616,6 +1616,10 @@ header {
   .footer .nav-foot-link {
     font-size: 18px;
   }
+  .footer .nav-foot-link:hover {
+    color: #5ABA47;
+    transform: none;
+  }
 }
 .footer .news-sub-header {
   font-size: 21px;

@@ -88,6 +88,11 @@
 
         @include xs {
             font-size: 18px;
+
+            &:hover {
+                color: $green;
+                transform: none;
+            }
         }
     }
 
