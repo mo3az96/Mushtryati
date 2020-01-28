@@ -19,6 +19,10 @@
         position: absolute;
         text-align: center;
         flex-direction: column;
+
+        @include xs {
+            width: 95%;
+        }
     }
 
     .search-sign {
@@ -27,6 +31,11 @@
         .a {
             fill: $text;
         }
+
+        @include xs {
+            width: 45px;
+            height: 45px;
+        }
     }
 
     .search-head {
@@ -34,12 +43,20 @@
         font-family: bold;
         color: $text;
         margin-bottom: 20px;
+
+        @include xs {
+            font-size: 25px;
+        }
     }
 
     .search-desc {
         font-size: 20px;
         font-family: bold;
         color: $text;
+
+        @include xs {
+            font-size: 18px;
+        }
     }
 
     .search {

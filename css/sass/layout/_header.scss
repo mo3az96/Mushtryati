@@ -2,6 +2,11 @@ header {
     border-top: 5px solid $green;
     padding-top: 35px;
     margin-bottom: 34px;
+
+    @include xs {
+        padding-top: 20px;
+        margin-bottom: 19px;
+    }
 }
 
 .header {
@@ -63,6 +68,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include xs {
+        padding: 10px 0;
+    }
 }
 
 .mo-menu-ico {
@@ -90,6 +99,10 @@ header {
 
 .user-anchor {
     margin-left: 30px;
+
+    @include xs {
+        margin-left: 20px;
+    }
 
     .a {
         fill: $text;
@@ -124,6 +137,12 @@ header {
             .a {
                 fill: transparent;
             }
+        }
+    }
+
+    &.mo-cart-ico {
+        @include xs {
+            margin-left: 0;
         }
     }
 }

@@ -7,16 +7,36 @@
         position: absolute;
         bottom: -120px;
         left: -110px;
+
+        @include xs {
+            bottom: 0;
+        }
+    }
+
+    .nav-foot-cont {
+        @include xs {
+            margin: 25px 0;
+        }
+    }
+
+    .news-letter {
+        @include xs {
+            margin: 25px 0;
+        }
     }
 
     .foot-logo {
         width: 250px;
         display: flex;
         margin-bottom: 37px;
+
+        @include xs {
+            width: 150px;
+            margin: 0 auto 20px;
+        }
     }
 
     .foot-header {
-        text-align: right;
         font-size: 34px;
         font-family: bold;
         color: $text;
@@ -35,10 +55,23 @@
             border-radius: 3px;
             margin-top: 13px;
         }
+
+        @include xs {
+            text-align: center;
+            font-size: 25px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
     }
 
     .nav-foot-li {
         margin: 5px 0;
+
+        @include xs {
+            margin: 7px auto;
+            text-align: center;
+        }
     }
 
     .nav-foot-link {
@@ -52,12 +85,21 @@
             color: $green;
             transform: translateX(-8px);
         }
+
+        @include xs {
+            font-size: 18px;
+        }
     }
 
     .news-sub-header {
         font-size: 21px;
         font-family: med;
         color: $footer;
+
+        @include xs {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
     }
 
     .last-footer {
@@ -69,5 +111,9 @@
         font-size: 13px;
         color: $text;
         opacity: 0.5;
+
+        @include xs {
+            height: 60px;
+        }
     }
 }

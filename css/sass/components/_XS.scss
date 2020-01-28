@@ -1,0 +1,120 @@
+.navbar-cont {
+    @include xs {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba($text, 0.5);
+        z-index: 999;
+        display: none;
+
+        .mo-navbar {
+            overflow-y: auto;
+            overflow-x: hidden;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            height: 100%;
+            padding-top: 70px;
+            width: 0;
+            background-color: #fff;
+            position: relative;
+            @include transition(all 0.5s ease-in-out);
+
+            &.mo-nav-open {
+                width: 280px;
+            }
+        }
+
+        .nav-li {
+            padding: 0 25px;
+            height: auto;
+            display: flex;
+            align-items: center;
+            margin: 7.5px 0;
+            width: 280px;
+        }
+
+        .nav-anchor {
+            height: auto;
+            padding: 0;
+        }
+
+        .mo-dropdown {
+            position: relative;
+            z-index: 9;
+            display: block;
+
+            >.nav-anchor {
+                width: 100%;
+                justify-content: space-between;
+                color: $text;
+
+                &:after {
+                    content: "";
+                    font-family: "Linearicons-Free";
+                    font-size: 15px;
+                    color: $text;
+                    font-weight: 900;
+                    @include transition(all 0.3s ease-in-out);
+                }
+
+                &.nav-expanded {
+                    color: $green;
+
+                    &:after {
+                        color: $green;
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+
+            .drop-mob {
+                display: none;
+            }
+
+            .mo-dropmenu {
+                padding: 10px 20px 5px;
+                position: relative;
+                bottom: auto;
+                left: auto;
+                transform: none;
+                max-width: none;
+                min-width: auto;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                visibility: visible;
+                opacity: 1;
+
+                .nav-li {
+                    width: 100%;
+                    justify-content: flex-start;
+                    margin: 4px 0;
+
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .close-menu {
+            position: absolute;
+            top: 15px;
+            left: 25px;
+
+            &:after {
+                content: "\e870";
+                font-family: "Linearicons-Free";
+                font-size: 20px;
+                color: $overlay;
+                font-weight: 900;
+                @include transition(all 0.3s ease-in-out);
+            }
+        }
+    }
+}

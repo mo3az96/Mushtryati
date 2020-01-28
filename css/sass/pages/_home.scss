@@ -1,6 +1,10 @@
 ._4-banners-cont {
     margin-top: 100px;
 
+    @include xs {
+        margin-top: 75px;
+    }
+
     .banners-head {
         width: 255px;
         height: 255px;
@@ -30,6 +34,23 @@
             border-radius: 50%;
             position: absolute;
         }
+
+        @include xs {
+            width: 100%;
+            height: auto;
+            position: relative;
+            transform: none;
+            top: auto;
+            left: auto;
+            padding: 0;
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 35px;
+
+            &::after {
+                display: none;
+            }
+        }
     }
 }
 
@@ -38,6 +59,11 @@
     align-items: center;
     flex-wrap: wrap;
     position: relative;
+
+    @include xs {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
 }
 
 .banner {
@@ -91,6 +117,10 @@
         align-items: flex-end;
         justify-content: center;
         padding-bottom: 32px;
+
+        @include xs {
+            justify-content: center;
+        }
     }
 
     .banner-name {
@@ -99,6 +129,10 @@
         font-size: 38px;
         font-family: bold;
         margin: 0 4.5px;
+
+        @include xs {
+            font-size: 25px;
+        }
     }
 
     .shop-now {
@@ -114,8 +148,23 @@
         background-color: transparent;
         @include transition(all 0.3s ease-in-out);
 
+        @include xs {
+            padding: 0 15px;
+            height: 30px;
+            font-size: 18px;
+        }
+
         &:hover {
             border-color: $green;
+        }
+    }
+
+    @include xs {
+        width: 100%;
+        margin-left: 0;
+
+        &:nth-of-type(2n) {
+            margin-left: 0;
         }
     }
 }
@@ -151,6 +200,23 @@
             border-radius: 0;
             position: absolute;
         }
+
+        @include xs {
+            width: 100%;
+            height: auto;
+            position: relative;
+            transform: none;
+            top: auto;
+            left: auto;
+            padding: 0;
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 35px;
+
+            &::after {
+                display: none;
+            }
+        }
     }
 
     .banner {
@@ -161,12 +227,20 @@
         &:first-of-type {
             .banner-info {
                 justify-content: flex-start;
+
+                @include xs {
+                    justify-content: center;
+                }
             }
         }
 
         &:last-of-type {
             .banner-info {
                 justify-content: flex-end;
+
+                @include xs {
+                    justify-content: center;
+                }
             }
         }
     }
@@ -204,6 +278,23 @@
             border-radius: 0;
             position: absolute;
         }
+
+        @include xs {
+            width: 100%;
+            height: auto;
+            position: relative;
+            transform: none;
+            top: auto;
+            left: auto;
+            padding: 0;
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 35px;
+
+            &::after {
+                display: none;
+            }
+        }
     }
 
     ._col-half {
@@ -218,6 +309,15 @@
 
         .banner-info {
             justify-content: flex-end;
+
+            @include xs {
+                justify-content: center;
+            }
+        }
+
+        @include xs {
+            width: 100%;
+            margin-left: 0;
         }
     }
 
@@ -233,9 +333,17 @@
         width: 100%;
         display: flex;
 
+        @include xs {
+            flex-direction: column;
+        }
+
         .banner {
             margin-left: 0;
             margin-bottom: 13px;
+
+            @include xs {
+                margin-bottom: 16px;
+            }
         }
 
         &:last-of-type {
@@ -261,6 +369,28 @@
                     .shop-now {
                         order: 2;
                         margin-top: 9px;
+                    }
+                }
+
+                @include xs {
+                    width: 100%;
+                    margin-left: 0;
+
+                    .banner-info {
+                        flex-direction: row;
+                        justify-content: center;
+                        padding-left: 0;
+
+                        .banner-name {
+                            order: 2;
+                            margin: 0;
+                            font-size: 25px;
+                        }
+
+                        .shop-now {
+                            order: 1;
+                            margin-top: 0;
+                        }
                     }
                 }
             }

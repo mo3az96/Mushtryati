@@ -23,7 +23,24 @@
         top: 50%;
         background-image: none;
         transform: translateY(-50%);
-        margin: 0 40px;
+
+        &.swiper-button-prev {
+            left: 50px;
+
+            @include xs {
+                left: 15px;
+            }
+        }
+
+        &.swiper-button-next {
+            right: 40px;
+
+            @include xs {
+                right: 5px;
+            }
+        }
+
+
 
         path {
             @include transition(all 0.3s ease-in-out);
@@ -43,6 +60,10 @@
     &#brands {
         .swiper-pagination {
             top: 170px;
+
+            @include md {
+                top: unset;
+            }
         }
     }
 
@@ -72,10 +93,26 @@
                 background-color: $green;
             }
         }
+
+        @include md {
+            top: unset;
+            left: unset;
+            position: relative;
+            flex-direction: row;
+            margin-top: 25px;
+
+            .swiper-pagination-bullet {
+                margin: 0 2.5px;
+            }
+        }
     }
 
     div[class^=swiper-button-] {
         background-image: none;
+
+        @include md {
+            display: none;
+        }
 
         &.swiper-button-prev {
             left: -60px;
@@ -103,16 +140,28 @@
 
 .pro-cont {
     margin-top: 100px;
+
+    @include xs {
+        margin-top: 75px;
+    }
 }
 
 .Product-pre {
     padding-top: 65px;
+
+    @include xs {
+        padding-top: 35px;
+    }
 }
 
 .products-head {
     font-size: 34px;
     color: $text;
     font-family: bold;
+
+    @include xs {
+        font-size: 25px;
+    }
 }
 
 .product {
@@ -295,20 +344,45 @@
         &:nth-of-type(4n) {
             margin-left: 0;
         }
+
+        @include md {
+            width: calc(33.3333% - 10.76px);
+        }
+
+        &:nth-of-type(4n) {
+            margin-left: 16px;
+        }
+
+        &:nth-of-type(3n) {
+            margin-left: 0;
+        }
     }
 }
 
 .banners-slider-cont {
     margin-top: 100px;
 
+    @include xs {
+        margin-top: 75px;
+    }
+
+
 
     .container {
         width: 100%;
         padding: 0;
+
+        @include xs {
+            padding: 0 15px;
+        }
     }
 
     .swiper-slide {
         width: 674px !important;
+
+        @include xs {
+            width: 100% !important;
+        }
     }
 
     .banners-head {
@@ -337,6 +411,23 @@
             content: "";
             border: 2px solid #fff;
             position: absolute;
+        }
+
+        @include xs {
+            width: 100%;
+            height: auto;
+            position: relative;
+            transform: none;
+            top: auto;
+            left: auto;
+            padding: 0;
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 35px;
+
+            &::after {
+                display: none;
+            }
         }
     }
 
@@ -379,6 +470,10 @@
 
     .banners {
         padding-right: 290px;
+
+        @include xs {
+            padding-right: 0;
+        }
     }
 
     .banners-slider {
@@ -414,5 +509,48 @@
         left: 0;
         content: "";
         display: block;
+    }
+}
+
+.pro-withoutslider {
+    .swiper-pagination {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        top: 230px;
+        left: -60px;
+
+        .swiper-pagination-bullet {
+            margin: 2.5px 0;
+            opacity: 1;
+            width: 13px;
+            height: 13px;
+            border: 1px solid $green;
+            background-color: transparent;
+            @include transition(all 0.3s ease-in-out);
+            outline: none !important;
+
+            &:hover {
+                background-color: $green;
+            }
+
+            &.swiper-pagination-bullet-active {
+                background-color: $green;
+            }
+        }
+
+        @include xs {
+            top: unset;
+            left: unset;
+            position: relative;
+            flex-direction: row;
+            margin-top: 25px;
+            display: flex;
+
+            .swiper-pagination-bullet {
+                margin: 0 2.5px;
+            }
+        }
     }
 }
