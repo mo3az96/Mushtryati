@@ -168,6 +168,7 @@ header {
     display: none;
 
     @include xs {
+        top: 40px;
         min-width: 350px;
         right: 0;
     }
