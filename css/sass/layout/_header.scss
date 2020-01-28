@@ -149,3 +149,34 @@ header {
         }
     }
 }
+
+/* start Cart */
+.cart-cont {
+    position: relative;
+}
+
+.cartList {
+    background-color: #fff;
+    min-width: 371px;
+    position: absolute;
+    z-index: 9;
+    top: 50px;
+    right: -50px;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 22px;
+
+    .cartprodimg {
+        padding: 20px;
+        border: none;
+        border-radius: 0;
+        background-color: $back;
+        height: 94px;
+        width: 98px;
+    }
+
+    .table {
+        border: none;
+    }
+}
+
+/*end Cart */
