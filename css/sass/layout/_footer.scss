@@ -32,6 +32,7 @@
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
+        align-items: center;
 
         @include xs {
             width: 150px;
