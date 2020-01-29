@@ -381,6 +381,8 @@
 
         .a {
             fill: $text;
+            stroke: $text;
+            stroke-width: 0;
             @include transition(all 0.3s ease-in-out);
         }
 

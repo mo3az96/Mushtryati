@@ -1,0 +1,39 @@
+.pro-page-cont {
+    margin: 0;
+
+    .whish-tools {
+        position: absolute;
+        top: 35px;
+        right: 35px;
+        z-index: 9;
+
+        .a {
+            fill: $green;
+            stroke: $green;
+            @include transition(all 0.3s ease-in-out);
+        }
+
+        &:hover {
+            .a {
+                fill: transparent;
+            }
+        }
+    }
+
+    .Product-flex {
+        .product {
+            @include xs {
+                width: 100%;
+
+                &:nth-of-type(4n) {
+                    margin-left: 0;
+                }
+
+                &:nth-of-type(3n) {
+                    margin-left: 0;
+                }
+
+            }
+        }
+    }
+}

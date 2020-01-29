@@ -150,6 +150,7 @@ html {
 }
 .search-fixed .search-sign .a {
   fill: #4A4A4A;
+  stroke: #4A4A4A;
 }
 @media (max-width: 767px) {
   .search-fixed .search-sign {
@@ -225,6 +226,9 @@ html {
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .search-fixed .search-button:hover {
   color: #5ABA47;
@@ -274,6 +278,9 @@ html {
   color: #fff;
   font-family: bold;
   border-radius: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -871,6 +878,8 @@ html {
 }
 .tools .product-tools .a {
   fill: #4A4A4A;
+  stroke: #4A4A4A;
+  stroke-width: 0;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -1221,6 +1230,7 @@ header {
 }
 .mo-menu-ico .a {
   fill: #4A4A4A;
+  stroke: #4A4A4A;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -1247,6 +1257,7 @@ header {
 }
 .user-anchor .a {
   fill: #4A4A4A;
+  stroke: #4A4A4A;
   stroke-width: 0;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -1257,6 +1268,7 @@ header {
   margin-left: 0;
 }
 .user-anchor.mo-likes .a {
+  stroke: #4A4A4A;
   stroke-width: 2px;
   fill: transparent;
 }
@@ -2044,6 +2056,38 @@ header {
   .cart-total .cart-total-total {
     order: 1;
     text-align: center;
+  }
+}
+
+.pro-page-cont {
+  margin: 0;
+}
+.pro-page-cont .whish-tools {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  z-index: 9;
+}
+.pro-page-cont .whish-tools .a {
+  fill: #5ABA47;
+  stroke: #5ABA47;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.pro-page-cont .whish-tools:hover .a {
+  fill: transparent;
+}
+@media (max-width: 767px) {
+  .pro-page-cont .Product-flex .product {
+    width: 100%;
+  }
+  .pro-page-cont .Product-flex .product:nth-of-type(4n) {
+    margin-left: 0;
+  }
+  .pro-page-cont .Product-flex .product:nth-of-type(3n) {
+    margin-left: 0;
   }
 }
 
