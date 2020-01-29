@@ -1,6 +1,6 @@
 $(window).on("load", function () {
     $(".loader .svg").fadeOut(1500, function () {
-        $(".loader").fadeOut(1000);
+        $(".loader").fadeOut(500);
         $('body').css("overflow-y", "visible");
         $('body').animate({
             scrollTop: 0
