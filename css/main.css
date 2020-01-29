@@ -511,6 +511,7 @@ html {
   position: relative;
   display: flex;
   align-items: center;
+  color: #5eae32;
 }
 .main-slider .slide-info {
   position: absolute;
