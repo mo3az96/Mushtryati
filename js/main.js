@@ -1,4 +1,12 @@
 $(window).on("load", function () {
+    $(".loader .svg").fadeOut(1500, function () {
+        $(".loader").fadeOut(1000);
+        $('body').css("overflow-y", "visible");
+        $('body').animate({
+            scrollTop: 0
+        }, 1);
+    });
+
     $(function () {
         jQuery('img.svg').each(function () {
             var $img = jQuery(this);
