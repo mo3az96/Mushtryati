@@ -395,25 +395,27 @@ $(document).ready(function () {
             e.stopPropagation();
         });
     }
+    if ($('div').hasClass("slider")) {
+        var slider = document.getElementById('slider');
+        var Max = slider.getAttribute("maxValue");
+        var Min = slider.getAttribute("minValue");
+        noUiSlider.create(slider, {
+            start: [Min, Max],
+            connect: true,
+            range: {
+                'min': 0,
+                'max': 500
+            }
+        });
+        var input0 = document.getElementById('min-range');
+        var input1 = document.getElementById('max-range');
+        var inputs = [input0, input1];
 
-    var slider = document.getElementById('slider');
-    var Max = slider.getAttribute("maxValue");
-    var Min = slider.getAttribute("minValue");
-    noUiSlider.create(slider, {
-        start: [Min, Max],
-        connect: true,
-        range: {
-            'min': 0,
-            'max': 500
-        }
-    });
-    var input0 = document.getElementById('min-range');
-    var input1 = document.getElementById('max-range');
-    var inputs = [input0, input1];
+        slider.noUiSlider.on('update', function (values, handle) {
+            inputs[handle].innerText = parseInt(values[handle], 10);
+            console.log(parseInt(values[handle], 100));
 
-    slider.noUiSlider.on('update', function (values, handle) {
-        inputs[handle].innerText = parseInt(values[handle], 10);
-        console.log(parseInt(values[handle], 100));
+        });
+    }
 
-    });
 });

@@ -251,3 +251,9 @@
         }
     }
 }
+
+.banners-page {
+    @include xs {
+        margin-top: 50px;
+    }
+}

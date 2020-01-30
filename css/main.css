@@ -2352,6 +2352,12 @@ header {
   font-family: bold;
 }
 
+@media (max-width: 767px) {
+  .banners-page {
+    margin-top: 50px;
+  }
+}
+
 .footer {
   position: relative;
   margin-top: 80px;
