@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/bootstrap-select.min.css" />
     <link rel="stylesheet" href="css/Linearicons.css" />
+    <link rel="stylesheet" href="css/nouislider.min.css" />
     <link rel="stylesheet" href="css/main.css" />
 </head>
 
@@ -22,7 +23,6 @@
         <img src="images/preloader.svg" alt="logo" class="img-responsive svg img">
     </div>
     <!-- End Loader -->
-
     <!-- Start Header -->
     <header>
         <div class="container">
@@ -103,7 +103,6 @@
             </div>
         </div>
     </header>
-
     <div class="_2nd-header-cont">
         <div class="container">
             <div class="_2nd-head">
@@ -161,7 +160,6 @@
         </div>
     </div>
     <!-- End Header -->
-
     <!-- Start Search -->
     <div class="search-fixed">
         <div class="search-cont">
@@ -176,6 +174,95 @@
     </div>
     <!-- End Search -->
 
+    <!-- Start Page Content -->
+    <!-- Start Banners -->
+    <div class="_4-banners-cont-sec">
+        <div class="container">
+            <div class="banners">
+                <div class="_col-half">
+                    <a href="#!" class="banner fixall">
+                        <img src="images/812x622.png" class="img-responsive">
+                        <div class="banner-info">
+                            <button class="shop-now fixall">shop now</button>
+                            <h2 class="banner-name fixall">Toner Lexmark</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="_col-half">
+                    <div class="col-row">
+                        <a href="#!" class="banner fixall">
+                            <img src="images/812x303.png" class="img-responsive">
+                            <div class="banner-info">
+                                <button class="shop-now fixall">shop now</button>
+                                <h2 class="banner-name fixall">Toner Lexmark</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-row">
+                        <a href="#!" class="banner fixall">
+                            <img src="images/35185.png" class="img-responsive">
+                            <div class="banner-info">
+                                <button class="shop-now fixall">shop now</button>
+                                <h2 class="banner-name fixall">Toner Lexmark</h2>
+                            </div>
+                        </a>
+                        <a href="#!" class="banner fixall">
+                            <img src="images/35185.png" class="img-responsive">
+                            <div class="banner-info">
+                                <button class="shop-now fixall">shop now</button>
+                                <h2 class="banner-name fixall">paper</h2>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Banners -->
+    <div class="filters-cont">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-xs-12">
+                    <h2 class="fixall depart-head">لوازم الطابعات</h2>
+                </div>
+                <div class="col-md-7 col-xs-12">
+                    <div class="filters">
+                        <div class="range-slider">
+                            <div class="slider-head">
+                                <h4 class="slider-title fixall">السعر</h4>
+                                <div class="range">
+                                    <span class="range-title">النطاق : </span>
+                                    <span id="min-range">200</span> -
+                                    <span id="max-range">500</span>
+                                </div>
+                            </div>
+                            <div id="slider" maxValue="500" minValue="200"></div>
+                        </div>
+                        <div class="range-select">
+                            <select class="selectpicker fixall">
+                                <option hidden>الماركة</option>
+                                <option value="Brand 1">الماركة 1</option>
+                                <option value="Brand 2">الماركة 2</option>
+                                <option value="Brand 3">الماركة 3</option>
+                                <option value="Brand 4">الماركة 4</option>
+                            </select>
+                        </div>
+                        <div class="filter-btn">
+                            <img src="images/settings.svg" class="svg">
+                            <ul class="fixall list-unstyled mo-filters">
+                                <li class="filter-li fixall">
+                                    <a href="#!" class="filter-anchor fixall selected">الأكثر تقييما</a>
+                                </li>
+                                <li class="filter-li fixall">
+                                    <a href="#!" class="filter-anchor fixall">الأكثر مبيعا</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Start Suggested -->
     <div class="pro-cont pro-page-cont text-center">
         <div class="container">
@@ -520,6 +607,8 @@
         </div>
     </div>
     <!-- End Suggested -->
+    <!-- End Page Content -->
+
 
     <!-- Start Footer -->
     <div class="footer">
@@ -577,6 +666,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-select.min.js"></script>
     <script src="js/swiper.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
