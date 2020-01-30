@@ -791,7 +791,6 @@ html {
   top: 30px;
   right: 7%;
   visibility: visible;
-  opacity: 1;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
