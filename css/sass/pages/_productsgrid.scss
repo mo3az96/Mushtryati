@@ -24,6 +24,7 @@
         .product {
             @include xs {
                 width: 100%;
+                margin-left: 0;
 
                 &:nth-of-type(4n) {
                     margin-left: 0;
