@@ -321,6 +321,49 @@ $(document).ready(function () {
             },
         });
     }
+    if ($('body').hasClass("singlePage")) {
+        var relatedswiper = new Swiper('#related .Product-slider', {
+            slidesPerView: 4,
+            spaceBetween: 16,
+            slidesPerGroup: 4,
+            loop: true,
+            loopFillGroupWithBlank: false,
+            autoplay: {
+                delay: 10000,
+            },
+            navigation: {
+                nextEl: '#related .swiper-button-next',
+                prevEl: '#related .swiper-button-prev',
+            },
+            breakpoints: {
+                500: {
+                    slidesPerView: 1,
+                    slidesPerGroup: 1,
+                    pagination: {
+                        el: '#related .swiper-pagination',
+                        clickable: true,
+                    },
+                },
+                992: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                    pagination: {
+                        el: '#related .swiper-pagination',
+                        clickable: true,
+                    },
+                },
+                1200: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                    navigation: false,
+                    pagination: {
+                        el: '#related .swiper-pagination',
+                        clickable: true,
+                    },
+                },
+            },
+        });
+    }
 
     $('.mo-search').click(function () {
         $(".search-fixed").fadeIn(700);
