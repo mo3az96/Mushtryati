@@ -1,0 +1,180 @@
+.form-cont {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    @include xs {
+        height: auto;
+    }
+
+    .Mushtryati-info-cont {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 50%;
+        background: url("../images/10412.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @include xs {
+            width: 100%;
+            position: relative;
+            top: unset;
+            bottom: unset;
+            left: unset;
+            background-attachment: fixed;
+        }
+    }
+
+    .Mushtryati-info {
+        position: relative;
+        z-index: 9;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        background-color: rgba(#000000, 0.6);
+        padding: 20% 18%;
+
+        @include xs {
+            padding: 25px 10px;
+            justify-content: space-around;
+        }
+    }
+
+    .form-logo {
+        display: flex;
+        align-items: center;
+
+        @include xs {
+            width: 200px;
+        }
+    }
+
+    .Mushtryati-desc {
+        // font-size: 20px;
+        font-size: 17px;
+        color: #fff;
+        font-family: bold;
+        text-align: center;
+
+        @include xs {
+            font-size: 15px;
+            margin: 20px 0;
+        }
+    }
+
+    .other-form {
+        font-size: 17px;
+        color: $green;
+        font-family: bold;
+        width: 292px;
+        height: 54px;
+        border: 2px solid #5ABA47;
+        border-radius: 27px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            background-color: $green;
+            color: #fff;
+        }
+
+        @include xs {
+            width: 200px;
+            height: 35px;
+        }
+    }
+
+    .form-head {
+        // font-size: 20px;
+        font-size: 18px;
+        color: $text;
+        font-family: bold;
+        margin-top: 60px;
+
+        @include xs {
+            text-align: center;
+            margin-top: 30px;
+        }
+    }
+
+    form {
+        margin-top: 60px;
+        width: 50%;
+        padding-left: 50px;
+        text-align: left;
+
+        @include xs {
+            width: 100%;
+            margin-top: 30px;
+            padding: 0;
+        }
+    }
+
+    .sign-input {
+        width: 100%;
+        height: 54px;
+        background-color: $back;
+        border: 2px solid $back;
+        border-radius: 27px;
+        opacity: 1;
+        padding: 25px;
+        font-size: 17px;
+        color: $text;
+        margin-bottom: 16px;
+        @include transition(all 0.3s ease-in-out);
+
+        &::placeholder {
+            font-size: 15px;
+            color: $text;
+            opacity: 0.5;
+        }
+
+        &:focus {
+            border-color: $green;
+        }
+    }
+
+    .forget-pass {
+        font-size: 15px;
+        color: $text;
+        opacity: 0.5;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .submit-form {
+        display: flex;
+        width: 100%;
+        height: 45px;
+        border: 2px solid #5ABA47;
+        background-color: $green;
+        border-radius: 27px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include transition(all 0.3s ease-in-out);
+        font-size: 17px;
+        color: #fff;
+        font-family: bold;
+        margin-top: 55px;
+
+        &:hover {
+            background-color: transparent;
+            color: $green;
+        }
+
+        @include xs {
+            margin-top: 40px;
+        }
+    }
+}
