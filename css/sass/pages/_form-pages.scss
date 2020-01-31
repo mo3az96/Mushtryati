@@ -1,10 +1,24 @@
 .form-cont {
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     overflow: hidden;
 
+    &.signUp {
+        form {
+            margin-top: 35px;
+
+            @include xs {
+                margin-top: 10px;
+            }
+        }
+
+        @include xs {
+            padding-bottom: 30px;
+        }
+    }
+
     @include xs {
-        height: auto;
+        min-height: auto;
     }
 
     .Mushtryati-info-cont {
@@ -175,6 +189,138 @@
 
         @include xs {
             margin-top: 40px;
+        }
+    }
+
+    .form-group {
+        width: 100%;
+        text-align: right;
+        display: flex;
+        align-items: center;
+
+        @include xs {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &._2cols {
+            .sign-input {
+                width: 50%;
+
+                &:first-of-type {
+                    margin-left: 16px;
+
+                    @include xs {
+                        margin-left: 0;
+                    }
+                }
+
+                @include xs {
+                    width: 100%;
+                    margin-left: 0;
+                }
+            }
+
+            &:last-of-type {
+                margin-top: 10px;
+            }
+        }
+
+        .submit-form {
+            margin-top: 0;
+            width: 50%;
+            margin-right: 16px;
+
+            @include xs {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+    }
+
+    .group-head {
+        // font-size: 20px;
+        font-size: 18px;
+        color: $text;
+        font-family: bold;
+        font-weight: unset;
+        margin: 25px 0;
+
+        @include xs {
+            margin: 20px 0;
+            text-align: right;
+        }
+    }
+
+
+
+
+    /* The container */
+    .terms {
+        display: block;
+        position: relative;
+        padding-right: 25px;
+        cursor: pointer;
+        font-size: 15px;
+        font-family: bold;
+        color: text;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        font-weight: unset;
+        width: 50%;
+
+        @include xs {
+            margin-bottom: 16px;
+            width: 100%;
+            padding-right: 30px;
+        }
+
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+
+            &:hover {
+                &~.checkmark {
+                    background-color: $overlay;
+                }
+            }
+
+            &:checked {
+                &~.checkmark {
+                    background-color: $green;
+
+                    &:after {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .checkmark {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            height: 18px;
+            width: 18px;
+            background-color: $back;
+            border-radius: 4px;
+            @include transition(all 0.3s ease-in-out);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:after {
+                position: absolute;
+                display: none;
+                content: "\2713";
+                color: #fff;
+            }
         }
     }
 }
