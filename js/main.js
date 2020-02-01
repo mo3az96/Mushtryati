@@ -364,12 +364,6 @@ $(document).ready(function () {
             },
         });
 
-        var galleryswiper = new Swiper('.gallery-thumbs', {
-            direction: 'vertical',
-            slidesPerView: 3,
-            spaceBetween: 16,
-        });
-
         $('.thumb').click(function () {
             var clickedImg = $(this).html();
             $(".gallery-anchor a").html(clickedImg);

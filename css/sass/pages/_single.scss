@@ -24,7 +24,6 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        margin-bottom: 9px;
     }
 
     .pro-title {
@@ -56,6 +55,11 @@
     .prices {
         display: flex;
         align-items: flex-end;
+
+        @include xs {
+            justify-content: center;
+            margin: 15px 0;
+        }
     }
 
     .inner-old-price {
@@ -107,6 +111,10 @@
         font-size: 17px;
         color: $text;
         font-family: med;
+
+        @include xs {
+            text-align: justify;
+        }
     }
 
     .single-tools {
@@ -282,21 +290,90 @@
         }
     }
 
+    .full-desc-head {
+        // font-size: 34px;
+        font-size: 28px;
+        color: $text;
+        font-family: bold;
+        text-align: center;
+        margin-bottom: 35px;
+
+        @include xs {
+            font-size: 25px;
+        }
+    }
+
+    ._3th-sec {
+        margin-top: 100px;
+    }
+
+    .full-desc-img {
+        margin-top: 50px;
+        position: relative;
+    }
+
+    .full-desc-img-head {
+        padding: 0 53px;
+        height: 140px;
+        background-color: #fff;
+        // font-size: 20px;
+        font-size: 18px;
+        font-family: bold;
+        color: $text;
+        position: absolute;
+        top: 0;
+        right: -53px;
+        transform: translateY(-50%);
+        z-index: 1;
+        border-radius: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        &:after {
+            top: -14px;
+            left: -14px;
+            right: -14px;
+            bottom: -14px;
+            content: "";
+            border: 2px solid #fff;
+            border-radius: 0;
+            position: absolute;
+        }
+
+        @include xs {
+            right: 0;
+        }
+    }
+
+    .full-desc-text {
+        margin-top: 40px;
+        font-size: 17px;
+        color: $text;
+        opacity: 0.72;
+        font-family: med;
+        background-color: #fff;
+        position: relative;
+        z-index: 2;
+        text-align: justify;
+    }
 }
 
 .gallery {
     width: 100%;
     display: flex;
     align-items: stretch;
-    max-height: 700px;
-    overflow: hidden;
+
+    @include xs {
+        margin-bottom: 20px;
+    }
 
     .gallery-anchor {
         width: 66.666666%;
         min-height: 100%;
         background-color: $back;
         margin-right: 16px;
-        margin-bottom: 9px;
         display: flex;
         align-items: center;
         border: 1px solid $back;
@@ -315,8 +392,12 @@
         }
     }
 
-    .gallery-thumbs {
+    .thumbs {
         width: 33.3333%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
         .thumb {
             width: 100%;
@@ -347,6 +428,12 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+            }
+
+            margin-bottom: 16px;
+
+            &:last-of-type {
+                margin-bottom: 0;
             }
         }
     }
