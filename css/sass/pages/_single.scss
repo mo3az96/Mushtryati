@@ -288,6 +288,8 @@
     width: 100%;
     display: flex;
     align-items: stretch;
+    max-height: 700px;
+    overflow: hidden;
 
     .gallery-anchor {
         width: 66.666666%;
