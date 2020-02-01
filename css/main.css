@@ -2955,6 +2955,9 @@ header {
   font-family: bold;
   text-align: center;
   margin-bottom: 35px;
+  position: relative;
+  background-color: #fff;
+  z-index: 2;
 }
 @media (max-width: 767px) {
   .product-details-cont .full-desc-head {
@@ -2998,7 +3001,9 @@ header {
 }
 @media (max-width: 767px) {
   .product-details-cont .full-desc-img-head {
-    right: 0;
+    padding: 0 20px;
+    right: -20px;
+    height: 100px;
   }
 }
 .product-details-cont .full-desc-text {
