@@ -1260,8 +1260,24 @@ html {
   margin-left: 15px;
   border-left: 3px dashed #F1F5F4;
 }
+@media (max-width: 767px) {
+  ._2nd-sec ._1st-col {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+}
 ._2nd-sec ._2nd-col {
   width: 50%;
+}
+@media (max-width: 767px) {
+  ._2nd-sec ._2nd-col {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
 }
 ._2nd-sec .user-rate {
   display: flex;
