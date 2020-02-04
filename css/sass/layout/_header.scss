@@ -340,3 +340,59 @@ header {
 }
 
 /*end Cart */
+
+
+.mo-menu {
+    position: relative;
+
+    &:hover {
+        .a {
+            fill: $green;
+            stroke: $green;
+        }
+
+        .mo-menu-drop {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+}
+
+.mo-menu-drop {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    background-color: #fff;
+    padding: 15px 30px 15px 0;
+    min-width: 240px;
+    transform: translateY(100%);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    @include transition(all 0.3s ease-in-out);
+
+    @include xs {
+        display: none;
+    }
+
+    .menu-li {
+        padding: 0;
+        justify-content: center;
+        position: relative;
+        margin: 5px 0;
+    }
+
+    .menu-anchor {
+        color: $footer;
+        font-family: bold;
+        opacity: 0.5;
+        font-size: 15px;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            color: $text;
+            opacity: 1;
+        }
+    }
+}

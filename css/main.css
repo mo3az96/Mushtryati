@@ -297,6 +297,14 @@ html {
   justify-content: center;
   height: 70px;
 }
+.mo-navbar .xs-menu {
+  display: none;
+}
+@media (max-width: 767px) {
+  .mo-navbar .xs-menu {
+    display: flex;
+  }
+}
 
 .nav-li {
   height: 100%;
@@ -1741,6 +1749,60 @@ header {
 }
 
 /*end Cart */
+.mo-menu {
+  position: relative;
+}
+.mo-menu:hover .a {
+  fill: #5ABA47;
+  stroke: #5ABA47;
+}
+.mo-menu:hover .mo-menu-drop {
+  visibility: visible;
+  opacity: 1;
+}
+
+.mo-menu-drop {
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  background-color: #fff;
+  padding: 15px 30px 15px 0;
+  min-width: 240px;
+  transform: translateY(100%);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 767px) {
+  .mo-menu-drop {
+    display: none;
+  }
+}
+.mo-menu-drop .menu-li {
+  padding: 0;
+  justify-content: center;
+  position: relative;
+  margin: 5px 0;
+}
+.mo-menu-drop .menu-anchor {
+  color: #414141;
+  font-family: bold;
+  opacity: 0.5;
+  font-size: 15px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.mo-menu-drop .menu-anchor:hover {
+  color: #4A4A4A;
+  opacity: 1;
+}
+
 ._4-banners-cont {
   margin-top: 100px;
 }
