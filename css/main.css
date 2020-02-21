@@ -3545,4 +3545,96 @@ header {
   }
 }
 
+.table-responsive.mo-compare-page {
+  border: none;
+}
+
+.mo-compare-table {
+  min-width: 500px;
+}
+.mo-compare-table th {
+  font-size: 20px;
+  color: #4A4A4A;
+  font-family: bold;
+  text-align: right;
+  padding: 20px 0;
+}
+.mo-compare-table .mo-popcart-img {
+  width: 122px;
+  height: 117px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F1F5F4;
+  padding: 25px;
+  border: 1px solid #F1F5F4;
+  margin: auto;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.mo-compare-table .mo-popcart-img:hover {
+  background-color: transparent;
+}
+.mo-compare-table td {
+  text-align: center;
+  padding: 20px 0;
+}
+.mo-compare-table .pro-desc {
+  font-size: 17px;
+  color: #4A4A4A;
+  font-family: med;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.mo-compare-table a.pro-desc {
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.mo-compare-table a.pro-desc:hover {
+  color: #5ABA47;
+}
+.mo-compare-table .compare-tools {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mo-compare-table .mo-add-to {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 3px solid #5ABA47;
+  border-radius: 50%;
+  margin: 0 7px;
+}
+.mo-compare-table .mo-add-to.mo-add-to-cart svg {
+  width: 17px;
+  height: 14px;
+}
+.mo-compare-table .mo-add-to.mo-add-to-cart svg .a {
+  fill: #5ABA47;
+  stroke: none;
+}
+.mo-compare-table .mo-add-to.mo-delete {
+  border-color: #D40003;
+}
+.mo-compare-table .mo-add-to.mo-delete svg {
+  width: 11px;
+  height: 14px;
+}
+.mo-compare-table .mo-add-to.mo-delete svg .a {
+  fill: #D40003;
+  stroke: none;
+}
+.mo-compare-table .mo-add-to:hover {
+  animation: vibe 0.7s ease forwards;
+}
+
 /*# sourceMappingURL=main.css.map */
